@@ -21,6 +21,15 @@
         if (password.includes(' ') || password.includes('　')) {
           return;
         }
+
+        async function sha256(pw) {
+        }
+
+        sha256(password).then(hash => {
+          const userId = 'wasabina67';
+          const repoName = 'pages-password-example';
+          window.location.href = `https://${userId}.github.io/${repoName}/${hash}`;
+        });
       }
     </script>
   </body>
