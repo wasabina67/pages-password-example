@@ -22,3 +22,8 @@ async function makeHashDirectory(pw) {
     console.error(error)
   }
 }
+
+(async () => {
+  const password = process.argv[2];
+  if (password) await makeHashDirectory(password);
+})();
