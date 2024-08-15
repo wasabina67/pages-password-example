@@ -6,8 +6,15 @@
     <title>pages-password-example</title>
   </head>
   <body>
-    <div></div>
+    <div>
+      <form onsubmit="event.preventDefault(); checkPassword();">
+        <input type="password" id="password" placeholder="" autofocus>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
     <script>
+      function checkPassword() {
+      }
     </script>
   </body>
 </html>
