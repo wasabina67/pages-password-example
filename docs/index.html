@@ -14,6 +14,13 @@
     </div>
     <script>
       function checkPassword() {
+        const password = document.getElementById('password').value;
+        if (!password) {
+          return;
+        }
+        if (password.includes(' ') || password.includes('　')) {
+          return;
+        }
       }
     </script>
   </body>
